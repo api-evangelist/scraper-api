@@ -35,6 +35,10 @@ common:
     url: https://www.scraperapi.com/
   - type: Documentation
     url: https://docs.scraperapi.com/
+  - type: Integrations
+    url: https://www.scraperapi.com/integrations/
+integrations:
+  - name: ScraperAPI
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
