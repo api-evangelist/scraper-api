@@ -28,7 +28,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.scraperapi.com/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://docs.scraperapi.com/getting-started
 common:
   - type: Website
