@@ -31,6 +31,10 @@ apis:
       - type: GettingStarted
         url: https://docs.scraperapi.com/getting-started
 common:
+  - type: GitHubOrganization
+    url: https://github.com/scraperapi
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/scraperapi
   - type: Website
     url: https://www.scraperapi.com/
   - type: Documentation
