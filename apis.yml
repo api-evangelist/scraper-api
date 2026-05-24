@@ -41,6 +41,8 @@ common:
     url: https://docs.scraperapi.com/
   - type: Integrations
     url: https://www.scraperapi.com/integrations/
+  - type: LLMsTxt
+    url: https://scraperapi.com/llms.txt
 integrations:
   - name: ScraperAPI
 maintainers:
