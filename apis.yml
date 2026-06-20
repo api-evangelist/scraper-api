@@ -4,7 +4,7 @@ description: >-
   ScraperAPI is a web scraping API that manages proxies, browsers, and
   CAPTCHAs to extract HTML from any web page with a simple API call.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Data Extraction
   - Proxies
