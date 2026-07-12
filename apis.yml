@@ -31,6 +31,10 @@ apis:
       - type: GettingStarted
         url: https://docs.scraperapi.com/getting-started
 common:
+  - type: DomainSecurity
+    url: security/scraper-api-domain-security.yml
+  - type: Authentication
+    url: authentication/scraper-api-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/scraperapi
   - type: LinkedIn
@@ -43,6 +47,8 @@ common:
     url: https://www.scraperapi.com/integrations/
   - type: LlmsText
     url: https://scraperapi.com/llms.txt
+  - url: https://www.scraperapi.com/feed/
+    type: Blog
 integrations:
   - name: ScraperAPI
 maintainers:
