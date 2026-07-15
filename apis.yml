@@ -31,6 +31,8 @@ apis:
       - type: GettingStarted
         url: https://docs.scraperapi.com/getting-started
 common:
+  - type: AgenticAccess
+    url: agentic-access/scraper-api-agentic-access.yml
   - type: DomainSecurity
     url: security/scraper-api-domain-security.yml
   - type: Authentication
