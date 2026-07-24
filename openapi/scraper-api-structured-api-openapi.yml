@@ -1,0 +1,98 @@
+openapi: 3.1.0
+info:
+  title: Scraper Structured API
+  description: 'ScraperAPI is a web scraping API that handles proxies, headless browsers,
+
+    and CAPTCHA solving. Sync, async, structured data, and data pipeline
+
+    endpoints are available. All requests require an api_key.
+
+    Source: https://docs.scraperapi.com/
+
+    '
+  version: '1.0'
+servers:
+- url: https://api.scraperapi.com
+  description: Synchronous API
+- url: https://async.scraperapi.com
+  description: Asynchronous API
+- url: https://datapipeline.scraperapi.com
+  description: DataPipeline API
+security:
+- ApiKeyAuth: []
+tags:
+- name: Structured
+paths:
+  /structured/google/search:
+    get:
+      summary: Structured Google search results
+      operationId: structuredGoogleSearch
+      tags:
+      - Structured
+      parameters:
+      - $ref: '#/components/parameters/ApiKey'
+      - name: query
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: country_code
+        in: query
+        schema:
+          type: string
+      - name: tld
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: JSON-structured SERP.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+  /structured/amazon/product:
+    get:
+      summary: Structured Amazon product data
+      operationId: structuredAmazonProduct
+      tags:
+      - Structured
+      parameters:
+      - $ref: '#/components/parameters/ApiKey'
+      - name: asin
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: country
+        in: query
+        schema:
+          type: string
+      - name: tld
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: JSON-structured Amazon product.
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+components:
+  parameters:
+    ApiKey:
+      name: api_key
+      in: query
+      required: true
+      description: ScraperAPI account key.
+      schema:
+        type: string
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: api_key
+      description: ScraperAPI account key, passed as a query parameter.
