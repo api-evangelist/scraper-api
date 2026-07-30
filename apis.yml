@@ -4,7 +4,20 @@ description: >-
   ScraperAPI is a web scraping API that manages proxies, browsers, and
   CAPTCHAs to extract HTML from any web page with a simple API call.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scraper-api.png
 tags:
   - Data Extraction
   - Proxies
@@ -15,21 +28,39 @@ created: '2026-03-29'
 modified: '2026-03-29'
 specificationVersion: '0.19'
 apis:
-  - aid: scraper-api:scraper-api
-    name: ScraperAPI
-    description: >-
-      ScraperAPI is a web scraping API that manages proxies, browsers, and
-      CAPTCHAs to extract HTML from any web page with a simple API call.
-    humanURL: https://www.scraperapi.com/
-    tags:
-      - Data Extraction
-      - Proxies
-      - Scraping
-    properties:
-      - type: Documentation
-        url: https://docs.scraperapi.com/
-      - type: GettingStarted
-        url: https://docs.scraperapi.com/getting-started
+- aid: scraper-api:scraper-api
+  name: ScraperAPI
+  description: >-
+    ScraperAPI is a web scraping API that manages proxies, browsers, and CAPTCHAs to extract HTML from
+    any web page with a simple API call.
+  humanURL: https://www.scraperapi.com/
+  tags:
+  - Data Extraction
+  - Proxies
+  - Scraping
+  properties:
+  - type: Documentation
+    url: https://docs.scraperapi.com/
+  - type: GettingStarted
+    url: https://docs.scraperapi.com/getting-started
+- aid: scraper-api:scraper-api-structured-api
+  name: ScraperAPI Structured API
+  description: The Structured API from ScraperAPI — 2 operation(s) for structured.
+  humanURL: https://www.scraperapi.com/
+  tags:
+  - Structured
+  properties:
+  - type: OpenAPI
+    url: openapi/scraper-api-structured-api-openapi.yml
+- aid: scraper-api:scraper-api-sync-api
+  name: ScraperAPI Sync API
+  description: The Sync API from ScraperAPI — 1 operation(s) for sync.
+  humanURL: https://www.scraperapi.com/
+  tags:
+  - Sync
+  properties:
+  - type: OpenAPI
+    url: openapi/scraper-api-sync-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/scraper-api-agentic-access.yml
