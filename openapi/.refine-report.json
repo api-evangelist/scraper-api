@@ -1,0 +1,16 @@
+{
+  "provider": "scraper-api",
+  "sources": [
+    "scraper-api-structured-api-openapi.yml",
+    "scraper-api-sync-api-openapi.yml"
+  ],
+  "outputs": [
+    "scraper-api-structured-api-openapi.yml",
+    "scraper-api-sync-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
