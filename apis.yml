@@ -1,8 +1,7 @@
 aid: scraper-api
 name: ScraperAPI
-description: >-
-  ScraperAPI is a web scraping API that manages proxies, browsers, and
-  CAPTCHAs to extract HTML from any web page with a simple API call.
+description: ScraperAPI is a web scraping API that manages proxies, browsers, and CAPTCHAs to extract
+  HTML from any web page with a simple API call.
 type: Index
 accessModel:
   pricing: freemium
@@ -19,20 +18,18 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scraper-api.png
 tags:
-  - Data Extraction
-  - Proxies
-  - Scraping
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/scraper-api/refs/heads/main/apis.yml
+- Data Extraction
+- Proxies
+- Scraping
+url: https://raw.githubusercontent.com/api-evangelist/scraper-api/refs/heads/main/apis.yml
 created: '2026-03-29'
-modified: '2026-03-29'
+modified: '2026-08-08'
 specificationVersion: '0.19'
 apis:
 - aid: scraper-api:scraper-api
   name: ScraperAPI
-  description: >-
-    ScraperAPI is a web scraping API that manages proxies, browsers, and CAPTCHAs to extract HTML from
-    any web page with a simple API call.
+  description: ScraperAPI is a web scraping API that manages proxies, browsers, and CAPTCHAs to extract
+    HTML from any web page with a simple API call.
   humanURL: https://www.scraperapi.com/
   tags:
   - Data Extraction
@@ -62,28 +59,32 @@ apis:
   - type: OpenAPI
     url: openapi/scraper-api-sync-api-openapi.yml
 common:
-  - type: AgenticAccess
-    url: agentic-access/scraper-api-agentic-access.yml
-  - type: DomainSecurity
-    url: security/scraper-api-domain-security.yml
-  - type: Authentication
-    url: authentication/scraper-api-authentication.yml
-  - type: GitHubOrganization
-    url: https://github.com/scraperapi
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/scraperapi
-  - type: Website
-    url: https://www.scraperapi.com/
-  - type: Documentation
-    url: https://docs.scraperapi.com/
-  - type: Integrations
-    url: https://www.scraperapi.com/integrations/
-  - type: LlmsText
-    url: https://scraperapi.com/llms.txt
-  - url: https://www.scraperapi.com/feed/
-    type: Blog
+- type: AgenticAccess
+  url: agentic-access/scraper-api-agentic-access.yml
+- type: DomainSecurity
+  url: security/scraper-api-domain-security.yml
+- type: Authentication
+  url: authentication/scraper-api-authentication.yml
+- type: GitHubOrganization
+  url: https://github.com/scraperapi
+- type: LinkedIn
+  url: https://www.linkedin.com/company/scraperapi
+- type: Website
+  url: https://www.scraperapi.com/
+- type: Documentation
+  url: https://docs.scraperapi.com/
+- type: Integrations
+  url: https://www.scraperapi.com/integrations/
+- type: LlmsText
+  url: https://scraperapi.com/llms.txt
+- url: https://www.scraperapi.com/feed/
+  type: Blog
+- type: PublicAPIsListing
+  url: https://github.com/public-apis/public-apis
 integrations:
-  - name: ScraperAPI
+- name: ScraperAPI
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-merged-from:
+- scraperapi
