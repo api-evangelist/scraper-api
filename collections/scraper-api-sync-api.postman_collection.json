@@ -1,0 +1,317 @@
+{
+  "item": [
+    {
+      "id": "ed3be06f-53c3-4bb5-93c7-07869c08d843",
+      "name": "Sync",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "ac63ce6a-002f-47aa-93ee-1e6116ba05af",
+          "name": "Scrape a URL synchronously",
+          "request": {
+            "name": "Scrape a URL synchronously",
+            "description": {},
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api_key",
+                  "value": "<string>",
+                  "description": "(Required) ScraperAPI account key."
+                },
+                {
+                  "disabled": false,
+                  "key": "url",
+                  "value": "<uri>",
+                  "description": "(Required) The fully-qualified URL to scrape (place after api_key)."
+                },
+                {
+                  "disabled": false,
+                  "key": "render",
+                  "value": "<boolean>",
+                  "description": "Set to true to render JavaScript with a headless browser."
+                },
+                {
+                  "disabled": false,
+                  "key": "country_code",
+                  "value": "<string>",
+                  "description": "Geo-target the request (e.g. us, gb, de)."
+                },
+                {
+                  "disabled": false,
+                  "key": "premium",
+                  "value": "<boolean>",
+                  "description": "Use residential/premium proxies."
+                },
+                {
+                  "disabled": false,
+                  "key": "session_number",
+                  "value": "<integer>",
+                  "description": "Reuse the same IP across requests (15-minute idle TTL)."
+                },
+                {
+                  "disabled": false,
+                  "key": "keep_headers",
+                  "value": "<boolean>"
+                },
+                {
+                  "disabled": false,
+                  "key": "device_type",
+                  "value": "<string>",
+                  "description": "desktop or mobile."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9c9bf294-bd95-4b67-8458-3e2c79833f13",
+              "name": "HTML body of the target page.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "url",
+                      "value": "<uri>"
+                    },
+                    {
+                      "key": "render",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "country_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "premium",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "session_number",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "keep_headers",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "device_type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/html"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/html"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2dfc09aa-216d-4d72-a65e-f57ce74efc01",
+          "name": "Scrape a URL with a POST body",
+          "request": {
+            "name": "Scrape a URL with a POST body",
+            "description": {},
+            "url": {
+              "path": [
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api_key",
+                  "value": "<string>",
+                  "description": "(Required) ScraperAPI account key."
+                },
+                {
+                  "disabled": false,
+                  "key": "url",
+                  "value": "<uri>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "key_0",
+                  "value": "string"
+                },
+                {
+                  "disabled": false,
+                  "key": "key_1",
+                  "value": "string"
+                },
+                {
+                  "disabled": false,
+                  "key": "key_2",
+                  "value": "43"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "562c26a8-9aa7-4ca5-9e79-535236f239da",
+              "name": "Response of the target site for the proxied POST.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "url",
+                      "value": "<uri>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "key": "key_0",
+                      "value": "4585.2676496215845"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.scraperapi.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "api_key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "aefd8deb-8a58-401b-9c09-4ae091eef898",
+    "name": "Scraper Structured Sync API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "ScraperAPI is a web scraping API that handles proxies, headless browsers,\nand CAPTCHA solving. Sync, async, structured data, and data pipeline\nendpoints are available. All requests require an api_key.\nSource: https://docs.scraperapi.com/\n",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Scraper Structured API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Structured",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Structured Google search results",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.scraperapi.com/structured/google/search",
+            "params": [
+              {
+                "name": "api_key",
+                "value": "",
+                "type": "query",
+                "description": "ScraperAPI account key."
+              },
+              {
+                "name": "query",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country_code",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tld",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Structured Google search results"
+        },
+        {
+          "info": {
+            "name": "Structured Amazon product data",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.scraperapi.com/structured/amazon/product",
+            "params": [
+              {
+                "name": "api_key",
+                "value": "",
+                "type": "query",
+                "description": "ScraperAPI account key."
+              },
+              {
+                "name": "asin",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "tld",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Structured Amazon product data"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

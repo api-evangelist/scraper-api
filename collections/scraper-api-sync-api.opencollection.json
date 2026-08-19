@@ -1,0 +1,114 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Scraper Structured Sync API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Sync",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Scrape a URL synchronously",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.scraperapi.com/",
+            "params": [
+              {
+                "name": "api_key",
+                "value": "",
+                "type": "query",
+                "description": "ScraperAPI account key."
+              },
+              {
+                "name": "url",
+                "value": "",
+                "type": "query",
+                "description": "The fully-qualified URL to scrape (place after api_key)."
+              },
+              {
+                "name": "render",
+                "value": "",
+                "type": "query",
+                "description": "Set to true to render JavaScript with a headless browser."
+              },
+              {
+                "name": "country_code",
+                "value": "",
+                "type": "query",
+                "description": "Geo-target the request (e.g. us, gb, de)."
+              },
+              {
+                "name": "premium",
+                "value": "",
+                "type": "query",
+                "description": "Use residential/premium proxies."
+              },
+              {
+                "name": "session_number",
+                "value": "",
+                "type": "query",
+                "description": "Reuse the same IP across requests (15-minute idle TTL)."
+              },
+              {
+                "name": "keep_headers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "device_type",
+                "value": "",
+                "type": "query",
+                "description": "desktop or mobile."
+              }
+            ]
+          },
+          "docs": "Scrape a URL synchronously"
+        },
+        {
+          "info": {
+            "name": "Scrape a URL with a POST body",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.scraperapi.com/",
+            "params": [
+              {
+                "name": "api_key",
+                "value": "",
+                "type": "query",
+                "description": "ScraperAPI account key."
+              },
+              {
+                "name": "url",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Scrape a URL with a POST body"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

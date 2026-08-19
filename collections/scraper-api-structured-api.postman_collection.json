@@ -1,0 +1,279 @@
+{
+  "item": [
+    {
+      "id": "9a154914-260b-4b14-a4a9-26c6d4d50b55",
+      "name": "Structured",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b2e9949e-b633-4c64-975f-48d67215ba67",
+          "name": "Structured Google search results",
+          "request": {
+            "name": "Structured Google search results",
+            "description": {},
+            "url": {
+              "path": [
+                "structured",
+                "google",
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api_key",
+                  "value": "<string>",
+                  "description": "(Required) ScraperAPI account key."
+                },
+                {
+                  "disabled": false,
+                  "key": "query",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "country_code",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tld",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7b8bb921-d9dd-447b-ba0b-c7e35039a782",
+              "name": "JSON-structured SERP.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "structured",
+                    "google",
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "country_code",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tld",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 6756.735471278429,\n  \"key_1\": true\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c2761e7a-9b46-47a8-8392-85c4a3021bf7",
+          "name": "Structured Amazon product data",
+          "request": {
+            "name": "Structured Amazon product data",
+            "description": {},
+            "url": {
+              "path": [
+                "structured",
+                "amazon",
+                "product"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api_key",
+                  "value": "<string>",
+                  "description": "(Required) ScraperAPI account key."
+                },
+                {
+                  "disabled": false,
+                  "key": "asin",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "tld",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2c1738dc-e602-47f7-adc5-cd93b0fd1018",
+              "name": "JSON-structured Amazon product.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "structured",
+                    "amazon",
+                    "product"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "asin",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "tld",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"key_0\": 6756.735471278429,\n  \"key_1\": true\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.scraperapi.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "api_key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "8118a817-1f52-415a-a443-9074c4c42a29",
+    "name": "Scraper Structured API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "ScraperAPI is a web scraping API that handles proxies, headless browsers,\nand CAPTCHA solving. Sync, async, structured data, and data pipeline\nendpoints are available. All requests require an api_key.\nSource: https://docs.scraperapi.com/\n",
+      "type": "text/plain"
+    }
+  }
+}
