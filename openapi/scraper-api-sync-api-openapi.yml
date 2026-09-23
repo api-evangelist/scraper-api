@@ -1,15 +1,13 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Scraper Structured Sync API
+  title: Scraper Sync API
   description: 'ScraperAPI is a web scraping API that handles proxies, headless browsers,
 
     and CAPTCHA solving. Sync, async, structured data, and data pipeline
 
     endpoints are available. All requests require an api_key.
 
-    Source: https://docs.scraperapi.com/
-
-    '
+    Source: https://docs.scraperapi.com/'
   version: '1.0'
 servers:
 - url: https://api.scraperapi.com
