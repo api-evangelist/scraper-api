@@ -32,6 +32,10 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scraper-ap
 tags:
 - Data Extraction
 - Proxies
+- Web Scraping
+tags_raw:
+- Data Extraction
+- Proxies
 - Scraping
 url: https://raw.githubusercontent.com/api-evangelist/scraper-api/refs/heads/main/apis.yml
 created: '2026-03-29'
@@ -44,6 +48,10 @@ apis:
     HTML from any web page with a simple API call.
   humanURL: https://www.scraperapi.com/
   tags:
+  - Data Extraction
+  - Proxies
+  - Web Scraping
+  tags_raw:
   - Data Extraction
   - Proxies
   - Scraping
